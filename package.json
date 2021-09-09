@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "preview": "nuxt start"
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.14.0",
+    "nuxt": "^2.15.8"
+  },
+  "devDependencies": {
+    "nuxt-windicss": "^1.2.3"
+  }
+}

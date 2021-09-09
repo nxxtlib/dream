@@ -1,0 +1,7 @@
+{
+  "css.validate": false,
+  "vetur.validation.style": false,
+  "files.insertFinalNewline": true,
+  "editor.quickSuggestions": { "strings": true },
+  "windicss.sortOnSave": true
+}
