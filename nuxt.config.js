@@ -2,17 +2,22 @@ import { readFileSync as read } from 'fs'
 import { resolve } from 'path'
 
 export default {
-  content: {
-    liveEdit: false,
-    markdown: { prism: { theme: false } },
-    fullTextSearchFields: ['title', 'summary', 'text']
-  },
-
-  buildModules: ['nuxt-windicss', '@nuxt/content'],
+  target: 'static',
 
   components: ['~/component/'],
 
+  generate: { fallback: true, dir: 'build' },
+
+  buildModules: ['nuxt-windicss', '@nuxt/content'],
+
   dir: { assets: 'asset', layouts: 'layout', pages: 'page', static: 'static' },
+
+  content: {
+    liveEdit: false,
+    apiPrefix: 'content',
+    markdown: { prism: { theme: false } },
+    fullTextSearchFields: ['title', 'summary', 'text']
+  },
 
   head: {
     title: 'Dream',
