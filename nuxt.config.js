@@ -6,6 +6,8 @@ export default {
 
   components: ['~/component/'],
 
+  plugins: ['~/plugin/db.js'],
+
   generate: { fallback: true, dir: 'build' },
 
   buildModules: ['nuxt-windicss', '@nuxt/content'],

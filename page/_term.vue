@@ -6,22 +6,6 @@
 
 <script>
   export default {
-    async asyncData({ $content, params }) {
-      const tags = await $content()
-        .where({ kind: 'tag' })
-        .only(['id', 'name', 'link'])
-        .fetch()
-
-      const articles = (
-        await $content()
-          .where({ kind: 'article' })
-          .only(['id', 'cover', 'title', 'summary', 'date', 'readtime', 'link', 'tags'])
-          .sortBy('date', 'desc')
-          .search(params.term)
-          .fetch()
-      ).map(i => ({ ...i, tags: tags.filter(({ id }) => i.tags.includes(+id)) }))
-
-      return { articles }
-    }
+    asyncData: async ({ $db, params }) => ({ articles: await $db.articles(params.term) })
   }
 </script>
