@@ -14,7 +14,7 @@
       </div>
     </div>
 
-    <core-image :to="article.link" :name="article.cover" />
+    <core-image :to="article.link" :name="article.cover" size="small" />
   </article>
 </template>
 

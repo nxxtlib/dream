@@ -42,12 +42,13 @@
   }
 
   :focus-visible {
-    @apply outline-none ring-2 ring-primary-600;
+    @apply ring-2 ring-primary-600 ring-opacity-40 !outline-none;
   }
 
   * {
     @apply cursor-default;
-    scrollbar-color: rgb(244, 114, 182) transparent;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(251, 113, 133) transparent;
   }
 
   body {
