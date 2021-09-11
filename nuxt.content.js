@@ -16,7 +16,6 @@ export const parse = file => {
 }
 
 export const insert = md => {
-  md.body.children.pop()
   md.text = md.text.replace(/<style>[\s\S]+<\/style>/g, '')
 
   const [kind, id] = md.slug.split('.')
