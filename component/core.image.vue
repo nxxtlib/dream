@@ -1,5 +1,5 @@
 <template>
-  <component :is="component" :to="to" :class="`flex-shrink-0 p-2 ${clazz}`">
+  <component :is="component" :to="to" :class="`flex-shrink-0 p-2`">
     <img
       :src="require(`~/asset/${name}`)"
       class="rounded-lg h-full object-cover w-full ring-8 ring-primary-400"

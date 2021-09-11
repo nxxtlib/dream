@@ -9,14 +9,14 @@ const base = {
 }
 
 const theme = {
-  screens: { 'sm': '720px' },
+  screens: { sm: '640px' },
   container: { center: true, padding: '1rem' },
 
   colors: { transparent: 'transparent', current: 'currentcolor', primary },
 
   fontFamily: { sans: ['kodchasan', 'sans-serif'] },
-  fontWeight: { 'light': 200, 'normal': 400, 'bold': 600 },
-  fontSize: { 'xs': '.75rem', 'sm': '.875rem', 'md': '1rem', 'lg': '1.125rem', 'xl': '1.5rem' }
+  fontWeight: { light: 200, normal: 400, bold: 600 },
+  fontSize: { xs: '.75rem', sm: '.875rem', md: '1rem', lg: '1.125rem', xl: '1.5rem' }
 }
 
 const typography = {

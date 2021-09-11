@@ -42,7 +42,7 @@
   }
 
   :focus-visible {
-    @apply ring-2 ring-primary-600 ring-opacity-40 !outline-none;
+    @apply !outline-none;
   }
 
   * {

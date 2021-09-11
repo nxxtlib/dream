@@ -1,6 +1,6 @@
 <template>
-  <layout-content>
-    <header class="flex flex-col gap-1">
+  <layout-content class="<sm:text-center <sm:items-center">
+    <header class="flex flex-col gap-1 items-stretch">
       <core-inline>{{ article.date }} · {{ article.readtime }}</core-inline>
       <core-line kind="title.1">{{ article.title }}</core-line>
       <core-line>{{ article.summary }}</core-line>

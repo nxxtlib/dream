@@ -1,6 +1,6 @@
 <template>
   <layout-content>
-    <header class="flex flex-col gap-1">
+    <header class="flex flex-col gap-1 <sm:text-center <sm:items-center">
       <core-line kind="title.1" class="capitalize">{{ tag.id }}</core-line>
       <core-line>{{ tag.desc }}</core-line>
     </header>
