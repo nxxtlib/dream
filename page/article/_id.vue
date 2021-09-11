@@ -12,7 +12,7 @@
 
     <footer class="flex gap-2">
       <core-tag :to="tag.link" :key="tag.id" v-for="tag in article.tags">
-        {{ tag.name }}
+        {{ tag.id }}
       </core-tag>
     </footer>
   </layout-content>

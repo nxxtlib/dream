@@ -30,7 +30,7 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-clip-content border-solid border-transparent rounded-lg bg-pink-400 border-4;
+    @apply bg-clip-content border-solid border-transparent rounded-lg bg-primary-400 border-4;
   }
 
   ::-webkit-scrollbar-corner {
@@ -38,11 +38,11 @@
   }
 
   ::selection {
-    @apply bg-pink-400 bg-opacity-40;
+    @apply bg-primary-400 bg-opacity-40;
   }
 
   :focus-visible {
-    @apply outline-none ring-2 ring-pink-600;
+    @apply outline-none ring-2 ring-primary-600;
   }
 
   * {
@@ -51,11 +51,11 @@
   }
 
   body {
-    @apply bg-pink-200 text-sm text-pink-800 overflow-x-hidden overflow-y-scroll;
+    @apply bg-primary-200 text-sm text-primary-800 overflow-x-hidden overflow-y-scroll;
   }
 
   .nuxt-progress {
-    @apply bg-clip-content border-solid border-transparent rounded-lg bg-pink-400 border-4 h-4;
+    @apply bg-clip-content border-solid border-transparent rounded-lg bg-primary-400 border-4 h-4;
   }
 
   .page-enter-active,

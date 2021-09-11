@@ -1,22 +1,24 @@
 const relation = async ($content, articles) => {
   const tags = await $content()
     .where({ kind: 'tag' })
-    .only(['id', 'name', 'link'])
+    .only(['id', 'link'])
     .fetch()
 
   for (const article of articles) {
-    article.tags = tags.filter(({ id }) => article.tags.includes(+id))
+    article.tags = tags.filter(({ id }) => article.tags.includes(id))
   }
 
   return articles
 }
 
 const articles = async ($content, search) => {
+  // search = search ? { title: { '$contains': search } } : {}
+
   const values = await $content()
-    .search(search)
     .sortBy('date', 'desc')
     .where({ kind: 'article' })
     .only(['id', 'cover', 'title', 'summary', 'date', 'readtime', 'link', 'tags'])
+    .search(search)
     .fetch()
 
   return await relation($content, values)
@@ -34,7 +36,7 @@ const article = async ($content, id) => {
 const tag = async ($content, id) => {
   const values = await $content()
     .where({ kind: 'tag', id })
-    .only(['id', 'name', 'desc', 'cover'])
+    .only(['id', 'desc'])
     .fetch()
 
   return values[0]

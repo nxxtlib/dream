@@ -1,5 +1,5 @@
 <template>
-  <small class="flex text-xs">
+  <small class="flex font-light text-xs">
     <slot />
   </small>
 </template>

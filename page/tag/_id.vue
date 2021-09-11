@@ -1,7 +1,7 @@
 <template>
   <layout-content>
     <header class="flex flex-col gap-1">
-      <core-line kind="title.1" class="capitalize">{{ tag.name }}</core-line>
+      <core-line kind="title.1" class="capitalize">{{ tag.id }}</core-line>
       <core-line>{{ tag.desc }}</core-line>
     </header>
 
